@@ -12,7 +12,7 @@ export default function HomeScreen() {
           <div className="container">
             <h1 className="display-4">Premium Car Wash Services</h1>
             <p className="lead">Quality, Convenience, and Trust</p>
-            <Link to="/services" className="btn btn-primary btn-lg">Book Now</Link>
+            <Link to="/login" className="btn btn-primary btn-lg">Book Now</Link>
           </div>
         </div>
       </section>
