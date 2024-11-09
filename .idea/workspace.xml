@@ -4,20 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79270ec6-63b3-4fc0-a661-71b59a08483a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/css/cart.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/Common/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Common/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Dashboard/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Dashboard/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Dashboard/Favourite.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Dashboard/Favourite.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/MainScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/MainScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/signup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-    </list>
+    <list default="true" id="79270ec6-63b3-4fc0-a661-71b59a08483a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -62,7 +49,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731117945336</updated>
-      <workItem from="1731117946371" duration="14202000" />
+      <workItem from="1731117946371" duration="14502000" />
     </task>
     <servers />
   </component>
