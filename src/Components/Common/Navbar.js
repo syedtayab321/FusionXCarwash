@@ -3,12 +3,17 @@ import './../../assets/css/Navbar.css';
 import {Link} from "react-router-dom";
 import logo from './../../assets/images/bike1.jpg'
 import SignupModal from "../../Pages/AuthPages/SignUpModel";
+import LoginModal from './../../Pages/AuthPages/Login'
 const Navbar = () => {
 const [show, setShow] = useState(false);
+const [loginshow, setLoginShow] = useState(false);
 
   const handleShow = () => setShow(true);
   const handleClose = () => setShow(false);
 
+  
+  const handleLoginShow = () => setLoginShow(true);
+  const handleLoginClose = () => setLoginShow(false);
   return (
     <>
       <nav className="custom-navbar navbar navbar-expand-lg">
@@ -44,13 +49,14 @@ const [show, setShow] = useState(false);
 
           {/* Login & Signup Buttons */}
           <div className="d-flex custom-btn-group">
-            <Link to="/login" className="custom-btn custom-btn-outline mx-2">Login</Link>
+            <button onClick={handleLoginShow} className="custom-btn custom-btn-outline mx-2" >Login</button>
             <button  onClick={handleShow} className="custom-btn custom-btn-primary mx-2">Sign Up</button>
           </div>
         </div>
       </div>
     </nav>
       <SignupModal show={show} handleClose={handleClose} />
+      <LoginModal loginshow={loginshow} handleLoginClose={handleLoginClose} />
     </>
   );
 };

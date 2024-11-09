@@ -1,0 +1,86 @@
+/* ServiceDetailsPage.css */
+.service-card {
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.service-card-img {
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.service-card-img:hover {
+  transform: scale(1.05);
+}
+
+.service-card .card-body {
+  padding: 1.5rem;
+}
+
+.service-card .card-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #34495e;
+}
+
+.service-card .card-text {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+button.w-100 {
+  width: 100%;
+}
+
+.cart-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-list li:last-child {
+  border-bottom: none;
+}
+
+.card-body {
+  background-color: #ecf0f1;
+  border-radius: 10px;
+}
+
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 2.25rem;
+  margin-bottom: 2rem;
+  color: #34495e;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .service-card-img {
+    height: 350px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .service-card {
+    border-radius: 20px;
+  }
+}

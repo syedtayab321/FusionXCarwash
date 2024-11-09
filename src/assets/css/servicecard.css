@@ -1,0 +1,41 @@
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.service-image-container {
+  height: 200px;
+  overflow: hidden;
+}
+
+.service-card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover .service-card-img {
+  transform: scale(1.05);
+}
+
+.service-title {
+  font-size: 1.25rem;
+  color: #2c3e50;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.service-description {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  margin-top: 5px;
+}

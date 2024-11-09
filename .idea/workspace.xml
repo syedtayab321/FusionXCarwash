@@ -4,32 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fecb1c05-29ca-45e6-b114-4a6f9925c043" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/Common/Navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/Common/TopBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/MainPage/HomeScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/AuthPages/SignUpModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Pages/MainScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/css/Home.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/css/Navbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/css/Topbar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/css/signup.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/fusionx.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    <list default="true" id="79270ec6-63b3-4fc0-a661-71b59a08483a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/BackendFunctions/AddToCart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BackendFunctions/FetchServices.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/DashboardComponents/ServicePage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/DashboardComponents/TopBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/Dashboard/Cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/Dashboard/Favourite.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/Dashboard/HomePage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/Dashboard/Orders.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/Dashboard/ServicesDetails.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Pages/Dashboard/SubcategoriesPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/css/serviceDetals.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/css/servicecard.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/css/subCatgeoryButton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/logo512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Common/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Common/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/AuthPages/SignUpModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/AuthPages/SignUpModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/MainScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/MainScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/signup.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,16 +39,16 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
   "associatedIndex": 7
 }]]></component>
-  <component name="ProjectId" id="2oXp8K9ezoXNp5R1WsaIfcMBV38" />
+  <component name="ProjectId" id="2oaqGZHAd8EC3buFoGPKNrg8tHI" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -70,12 +66,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="fecb1c05-29ca-45e6-b114-4a6f9925c043" name="Changes" comment="" />
-      <created>1731025617907</created>
+      <changelist id="79270ec6-63b3-4fc0-a661-71b59a08483a" name="Changes" comment="" />
+      <created>1731117945336</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1731025617907</updated>
-      <workItem from="1731025619492" duration="12130000" />
+      <updated>1731117945336</updated>
+      <workItem from="1731117946371" duration="13285000" />
     </task>
     <servers />
   </component>

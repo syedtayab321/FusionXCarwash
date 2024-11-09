@@ -1,0 +1,60 @@
+.category-button {
+  padding: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.category-button:hover {
+  background-color: #3498db;
+}
+
+.sub-category-card {
+  padding: 15px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #dcdcdc;
+  transition: transform 0.3s ease;
+}
+
+.sub-category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sub-category-card h5 {
+  font-size: 1.25rem;
+  color: #2c3e50;
+}
+
+.sub-category-card p {
+  color: #7f8c8d;
+}
+
+
+.sub-category-card {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+.sub-category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.sub-category-card .card-image-container img {
+  border-radius: 5px;
+}
+
+.sub-category-card h5 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+}
+
+.sub-category-card p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
