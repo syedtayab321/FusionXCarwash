@@ -1,0 +1,22 @@
+.cartdata .card {
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cartdata .card:hover {
+  transform: translateY(-5px);
+}
+
+.cartdata .card-img-top {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.cartdata button:hover {
+  background-color: #28a745;
+  color: white;
+}
+
+.cartdata button:focus {
+  outline: none;
+}

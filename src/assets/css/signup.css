@@ -75,3 +75,17 @@
     transform: translateY(0);
   }
 }
+
+@media (max-width:930px) {
+  .signup-modal{
+    width: 100%!important;
+  }
+}
+@media (max-width:430px) {
+  .image-section {
+    display: none;
+  }
+  .form-section{
+    width: 100%;
+  }
+}

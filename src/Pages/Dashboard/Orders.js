@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ListGroup, Card} from 'react-bootstrap';
+import TopBar from "../../Components/DashboardComponents/TopBar";
 
 const OrdersScreen = () => {
   const [orders] = useState([
@@ -13,9 +14,11 @@ const OrdersScreen = () => {
   const getStatusOrders = (status) => {
     return orders.filter(order => order.status === status);
   };
-
+    const username = localStorage.getItem('userEmail');
   return (
-    <div className="container py-5">
+       <>
+         <TopBar username={username} />
+         <div className="container py-5">
       <h2>Your Orders</h2>
 
       {/* Order Placed */}
@@ -54,6 +57,7 @@ const OrdersScreen = () => {
         </ListGroup>
       </Card>
     </div>
+       </>
   );
 };
 

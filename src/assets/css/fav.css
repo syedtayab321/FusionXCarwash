@@ -1,0 +1,49 @@
+.fav-card {
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fav-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.fav-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.fav-price {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #28a745; /* Green color for price */
+}
+
+.add-to-cart-btn {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 12px;
+  background-color: #007bff; /* Primary color */
+  border: 2px solid #007bff;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+  cursor: pointer;
+}
+
+h2 {
+  color: #333;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .fav-card {
+    margin-bottom: 1.5rem;
+  }
+}

@@ -7,6 +7,8 @@ import ServiceDetailsPage from "./Pages/Dashboard/ServicesDetails";
 import FavoritesScreen from "./Pages/Dashboard/Favourite";
 import CartScreen from "./Pages/Dashboard/Cart";
 import OrdersScreen from "./Pages/Dashboard/Orders";
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+
 function App() {
   return (
     <>
