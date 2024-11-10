@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79270ec6-63b3-4fc0-a661-71b59a08483a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/BackendFunctions/AddOrders.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BackendFunctions/cartUtils.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BackendFunctions/AddToCart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/BackendFunctions/AddToCart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/DashboardComponents/ServicePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/DashboardComponents/ServicePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/DashboardComponents/TopBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/DashboardComponents/TopBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainPage/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainPage/HomeScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Dashboard/Cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Dashboard/Cart.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Dashboard/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Dashboard/HomePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Dashboard/ServicesDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Dashboard/ServicesDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pages/Dashboard/SubcategoriesPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Dashboard/SubcategoriesPage.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +54,7 @@
       <updated>1731117945336</updated>
       <workItem from="1731117946371" duration="15064000" />
       <workItem from="1731196948685" duration="2443000" />
-      <workItem from="1731209904224" duration="3308000" />
+      <workItem from="1731209904224" duration="4893000" />
     </task>
     <servers />
   </component>
