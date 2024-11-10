@@ -10,7 +10,7 @@ const ServicePage = () => {
   const [loading, setLoading] = useState(true);
   const [username, setUsername] = useState('User');
 
-  const navigate = useNavigate(); // Initialize navigate hook for routing
+  const navigate = useNavigate();
 
   useEffect(() => {
     const loadServices = async () => {

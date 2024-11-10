@@ -1,23 +1,18 @@
-import React, {useState} from "react";
+import React from "react";
 import '../../assets/css/Home.css';
 import image1 from './../../assets/images/image1.jpg';
 import { Link } from "react-router-dom";
-import LoginModal from "../../Pages/AuthPages/Login";
 
 export default function HomeScreen() {
-  const [loginshow, setLoginShow] = useState(false);
-   const handleLoginShow = () => setLoginShow(true);
-  const handleLoginClose = () => setLoginShow(false);
   return (
     <>
-       <LoginModal loginshow={loginshow} handleLoginClose={handleLoginClose} />
       <div className="main-page">
       <section className="hero-section text-center text-white">
         <div className="hero-overlay">
           <div className="container">
             <h1 className="display-4">Premium Car Wash Services</h1>
             <p className="lead">Quality, Convenience, and Trust</p>
-            <button onClick={handleLoginShow} className="btn btn-primary btn-lg">Book Now</button>
+            <Link  to= '/dashboard' className="btn btn-primary btn-lg">Book Now</Link>
           </div>
         </div>
       </section>

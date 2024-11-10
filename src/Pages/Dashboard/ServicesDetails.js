@@ -5,13 +5,13 @@ import { FaStar } from 'react-icons/fa';
 import { Timestamp } from 'firebase/firestore';
 import './../../assets/css/serviceDetals.css';
 import TopBar from "../../Components/DashboardComponents/TopBar";
-import { addToCart } from '../../BackendFunctions/AddToCart';
+import { addToCart } from '../../BackendFunctions/AddToCart'; // Import the addToCart function
 
 const ServiceDetailsPage = () => {
   const [service, setService] = useState(null);
   const [loading, setLoading] = useState(true);
-  const [selectedHours, setSelectedHours] = useState(1); // Default to 1 hour
-  const [totalPrice, setTotalPrice] = useState(0); // Total price based on selected hours
+  const [selectedHours, setSelectedHours] = useState(1);
+  const [totalPrice, setTotalPrice] = useState(0);
 
   const username = localStorage.getItem('userEmail');
   const location = useLocation();
@@ -24,7 +24,7 @@ const ServiceDetailsPage = () => {
         createdAt: data.createdAt instanceof Timestamp ? data.createdAt.toDate() : new Date(data.createdAt),
       };
       setService(formattedData);
-      setTotalPrice(formattedData.price); // Set initial price based on the price per hour
+      setTotalPrice(Number(formattedData.price)); // Ensure initial price is a number
       setLoading(false);
     } else {
       setLoading(false);
@@ -33,30 +33,39 @@ const ServiceDetailsPage = () => {
 
   const handleIncreaseHours = () => {
     setSelectedHours((prev) => prev + 1);
+    handlePriceUpdate(selectedHours + 1); // Pass updated hours
   };
 
   const handleDecreaseHours = () => {
     if (selectedHours > 1) {
       setSelectedHours((prev) => prev - 1);
+      handlePriceUpdate(selectedHours - 1); // Pass updated hours
     }
   };
 
   const handleAddToCart = () => {
-    const orderData = {
-      ...service,
-      selectedHours,
-      totalPrice,
+    const cartData = {
+      ImageUrl: service?.ImageUrl,
+      adminEmail: service?.adminEmail,
+      adminId: service?.adminId,
+      adminName: service?.adminName,
+      adminPhoneNumber: service?.adminMobile,
+      selectedHours: selectedHours,
+      title: service?.title,
+      totalPrice: totalPrice,
+      userId: username,
       orderDate: Timestamp.now(),
     };
-    addToCart(orderData);
-    alert("Added to cart!");
+
+    addToCart(cartData)
+      .then(() => alert("Added to cart!"))
+      .catch((error) => console.error("Error adding to cart:", error));
   };
 
-  const handlePriceUpdate = () => {
-    setTotalPrice(Number(service?.price) * selectedHours);
+  const handlePriceUpdate = (hours) => {
+    const updatedPrice = Number(service?.price) * hours;
+    setTotalPrice(updatedPrice); // Ensure `updatedPrice` is always a number
   };
-  const formattedTotalPrice = Number.isNaN(Number(totalPrice)) ? 0 : Number(totalPrice);
-  console.log("Total Price:", formattedTotalPrice);
 
   if (loading) {
     return (
@@ -77,7 +86,6 @@ const ServiceDetailsPage = () => {
         </h2>
 
         <Row className="justify-content-center">
-          {/* Service Image */}
           <Col lg={6} md={8} sm={12} className="mb-4">
             <Card className="service-card shadow-lg">
               <Card.Img
@@ -85,12 +93,11 @@ const ServiceDetailsPage = () => {
                 src={service?.ImageUrl || 'https://via.placeholder.com/300'}
                 alt={service?.title}
                 className="service-card-img"
-                style={{ maxWidth: '100%', maxHeight: '250px', objectFit: 'contain' }} // Make image smaller and adjustable
+                style={{ maxWidth: '100%', maxHeight: '250px', objectFit: 'contain' }}
               />
             </Card>
           </Col>
 
-          {/* Service Info */}
           <Col lg={6} md={8} sm={12} className="mb-4">
             <Card className="service-card shadow-lg">
               <Card.Body>
@@ -106,10 +113,9 @@ const ServiceDetailsPage = () => {
                   <strong>Price per Hour:</strong> AED {service?.price}
                 </Card.Text>
                 <Card.Text>
-                  <strong>Available Hours:</strong> {service?.hoursAvailable} hours
+                  <strong>Available Hours:</strong> {service?.hoursAvailable || service?.wash} hours
                 </Card.Text>
 
-                {/* Rating */}
                 <Card.Text>
                   <strong>Rating:</strong>
                   {[...Array(5)].map((_, index) => (
@@ -117,7 +123,6 @@ const ServiceDetailsPage = () => {
                   ))}
                 </Card.Text>
 
-                {/* Admin Info */}
                 <Card.Text>
                   <strong>Service Provider:</strong> {service?.adminName}
                 </Card.Text>
@@ -126,27 +131,23 @@ const ServiceDetailsPage = () => {
                   <a href={`mailto:${service?.adminEmail}`}>{service?.adminEmail}</a>
                 </Card.Text>
 
-                {/* Select Hours */}
                 <Card.Text>
                   <strong>Select Hours:</strong>
                   <Button variant="secondary" onClick={handleDecreaseHours} disabled={selectedHours <= 1}>
                     -
                   </Button>
                   <span className="mx-3">{selectedHours}</span>
-                  {service?.hoursAvailable <= selectedHours ?
-                       null :
-                      <Button variant="secondary" onClick={handleIncreaseHours}>
-                       +
-                      </Button>
+                  {service?.hoursAvailable && service?.wash <= selectedHours ? null :
+                    <Button variant="secondary" onClick={handleIncreaseHours}>
+                      +
+                    </Button>
                   }
                 </Card.Text>
 
-                {/* Total Price */}
                 <Card.Text>
-                  <strong>Total Price:</strong> AED {formattedTotalPrice.toFixed(2)} {/* Ensure totalPrice is a number */}
+                  <strong>Total Price:</strong> AED {Number(totalPrice).toFixed(2)}
                 </Card.Text>
 
-                {/* Add to Cart Button */}
                 <Button variant="primary" onClick={handleAddToCart}>
                   Add to Cart
                 </Button>

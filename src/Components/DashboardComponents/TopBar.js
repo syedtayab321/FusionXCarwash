@@ -11,7 +11,6 @@ const TopBar = ({ username }) => {
   const handleLogout = async () => {
     try {
       await signOut(auth);
-       localStorage.removeItem('userEmail');
       navigate('/');
     } catch (error) {
       console.error('Error during logout:', error);
@@ -25,7 +24,7 @@ const TopBar = ({ username }) => {
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ms-auto d-flex align-items-center">
-            <span className="text-white me-3">Hello, {username}</span>
+            <span className="text-white me-3">Hello, Guest User</span>
             <Button
               variant="outline-light"
               className="me-3 rounded-circle p-2"

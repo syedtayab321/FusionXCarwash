@@ -1,30 +1,24 @@
-import { db } from '../firebaseConfig';
-import { collection, addDoc, Timestamp } from 'firebase/firestore';
-export const addToCart = async (orderData) => {
+// Import Firestore
+import { getFirestore, collection, addDoc } from 'firebase/firestore';
+const db = getFirestore();
+export const addToCart = async (cartData) => {
   try {
-    const cartRef = collection(db, 'orders');
-    const docRef = await addDoc(cartRef, {
-      adminId: orderData.adminId,
-      adminEmail: orderData.adminEmail,
-      adminName: orderData.adminName,
-      adminPhoneNumber: orderData.adminPhoneNumber,
-      cartItem: [
-        {
-          title: orderData.title,
-          price: orderData.price,
-          selectedHours: orderData.selectedHours,
-        },
-      ],
-      userId: orderData.userId,
-      orderDate: Timestamp.now(),
-      status: 'order_pending',
-      userLocation: orderData.userLocation,
-      userName: orderData.userName,
-      userPhone: orderData.userPhone,
-      userUid: orderData.userUid,
-    });
-    console.log("Order added with ID:", docRef.id);
-  } catch (e) {
-    console.error("Error adding order: ", e);
+    const cartCollection = collection(db, 'cart_items');
+    const cartItem = {
+      ImageUrl: cartData.ImageUrl,
+      adminEmail: cartData.adminEmail,
+      adminId: cartData.adminId,
+      adminName: cartData.adminName,
+      adminPhoneNumber: cartData.adminPhoneNumber,
+      selectedHours: cartData.selectedHours,
+      title: cartData.title,
+      totalPrice: cartData.totalPrice,
+      userId: cartData.userId,
+      createdAt: new Date(),
+    };
+    await addDoc(cartCollection, cartItem);
+    console.log('Item successfully added to cart in Firestore!');
+  } catch (error) {
+    console.error('Error adding item to cart:', error);
   }
 };
