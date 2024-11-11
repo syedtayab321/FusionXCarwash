@@ -1,0 +1,81 @@
+/* Footer Styles */
+.custom-footer {
+  background: #24252A;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.footer-heading {
+  font-size: 1.2rem;
+  color: #ffaf7b;
+  margin-bottom: 1rem;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: #dddddd;
+}
+
+/* Social Media Icons */
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-link {
+  display: inline-block;
+  color: #ffaf7b;
+  font-size: 1.2rem;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #ffffff;
+}
+
+/* Links Styling */
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-link {
+  color: #bbbbbb;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ffaf7b;
+}
+
+/* Contact Info */
+.footer-text svg {
+  margin-right: 8px;
+  vertical-align: middle;
+  color: #ffaf7b;
+}
+
+/* Bottom Footer */
+.footer-bottom {
+  background: #1c1c1c;
+  font-size: 0.8rem;
+  color: #aaaaaa;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+  .custom-footer .row {
+    text-align: center;
+  }
+
+  .footer-text, .footer-link {
+    font-size: 0.85rem;
+  }
+
+  .footer-heading {
+    font-size: 1.1rem;
+  }
+}

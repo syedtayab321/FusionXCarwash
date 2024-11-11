@@ -42,7 +42,6 @@ const ServicePage = () => {
 
   return (
     <>
-      <TopBar username={username} />
       <Container className="mt-4">
         <h2 className="text-center mb-4" style={{ color: '#34495e', fontWeight: 'bold' }}>Our Services</h2>
         <Row>

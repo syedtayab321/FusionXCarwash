@@ -2,10 +2,10 @@ body{
    font-family: 'Poppins';
 }
 .hero-section {
-  background-image: url('./../images/background.jpg');
+  background-image: url('./../images/background2.jpg');
   background-size: cover;
   background-position: center;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,41 +16,4 @@ body{
   background-color: rgba(0, 0, 0, 0.5);
   padding: 50px;
   border-radius: 10px;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  margin-bottom: 1.5rem;
-  color: white;
-}
-
-.service-card {
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
-}
-
-.service-card:hover {
-  transform: scale(1.05);
-}
-
-.service-img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.testimonial-card {
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  transition: box-shadow 0.3s ease;
-}
-
-.testimonial-card:hover {
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.cta-section {
-  background-color: #007bff;
-  padding: 3rem;
 }

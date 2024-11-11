@@ -5,7 +5,7 @@ import { FaStar } from 'react-icons/fa';
 import { Timestamp } from 'firebase/firestore';
 import './../../assets/css/serviceDetals.css';
 import TopBar from "../../Components/DashboardComponents/TopBar";
-import { addToCart } from '../../BackendFunctions/AddToCart'; // Import the addToCart function
+import { addToCart } from '../../BackendFunctions/AddToCart';
 
 const ServiceDetailsPage = () => {
   const [service, setService] = useState(null);
@@ -24,7 +24,7 @@ const ServiceDetailsPage = () => {
         createdAt: data.createdAt instanceof Timestamp ? data.createdAt.toDate() : new Date(data.createdAt),
       };
       setService(formattedData);
-      setTotalPrice(Number(formattedData.price)); // Ensure initial price is a number
+      setTotalPrice(Number(formattedData.price));
       setLoading(false);
     } else {
       setLoading(false);
@@ -33,13 +33,13 @@ const ServiceDetailsPage = () => {
 
   const handleIncreaseHours = () => {
     setSelectedHours((prev) => prev + 1);
-    handlePriceUpdate(selectedHours + 1); // Pass updated hours
+    handlePriceUpdate(selectedHours + 1);
   };
 
   const handleDecreaseHours = () => {
     if (selectedHours > 1) {
       setSelectedHours((prev) => prev - 1);
-      handlePriceUpdate(selectedHours - 1); // Pass updated hours
+      handlePriceUpdate(selectedHours - 1);
     }
   };
 
@@ -64,7 +64,7 @@ const ServiceDetailsPage = () => {
 
   const handlePriceUpdate = (hours) => {
     const updatedPrice = Number(service?.price) * hours;
-    setTotalPrice(updatedPrice); // Ensure `updatedPrice` is always a number
+    setTotalPrice(updatedPrice);
   };
 
   if (loading) {

@@ -1,0 +1,96 @@
+.about-hero {
+  background: white;
+  padding: 100px 0;
+  text-align: center;
+  color: black;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.about-company {
+  padding: 50px 0;
+}
+
+.about-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  margin-top: 15px;
+}
+
+.about-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff7b00;
+  border: none;
+  color: white;
+}
+
+.our-services {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.service-card {
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.service-card img {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+.meet-our-team {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.team-card {
+  margin-bottom: 30px;
+  border-radius: 8px;
+}
+
+.team-card img {
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+}
+
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+}

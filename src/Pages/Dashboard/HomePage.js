@@ -1,9 +1,12 @@
 import React from 'react';
 import ServicePage from "../../Components/DashboardComponents/ServicePage";
+import TopBar from "../../Components/DashboardComponents/TopBar";
 const HomePage = () => {
-    return (
+    const authUser = localStorage.getItem('userEmail');
+        return (
         <>
-           <ServicePage/>
+            <TopBar username={authUser} />
+            <ServicePage/>
         </>
         );
 };
