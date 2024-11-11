@@ -1,3 +1,6 @@
+*{
+  font-family: 'Poppins'
+}
 .top-bar {
     position: relative;
     height: 75px;

@@ -24,10 +24,9 @@ const Footer = () => {
           <div className="col-md-3">
             <h5 className="footer-heading">Our Services</h5>
             <ul className="footer-links">
-              <li><Link to="#car-wash" className="footer-link">Car Wash</Link></li>
-              <li><Link to="#bike-cleaning" className="footer-link">Bike Cleaning</Link></li>
-              <li><Link to="#home-cleaning" className="footer-link">Home Cleaning</Link></li>
-              <li><Link to="#deep-cleaning" className="footer-link">Deep Cleaning</Link></li>
+              <li><Link to="/service/Car Wash" className="footer-link">Car Wash</Link></li>
+              <li><Link to="/service/Bike Wash" className="footer-link">Bike Wash</Link></li>
+              <li><Link to="/service/House Cleaning" className="footer-link">House Cleaning</Link></li>
             </ul>
           </div>
 

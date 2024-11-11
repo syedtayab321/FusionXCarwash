@@ -103,7 +103,7 @@ const ServiceDetailsPage = () => {
               <Card.Body>
                 <Card.Title>{service?.title}</Card.Title>
                 <Card.Text className="text-muted">
-                  <small>{service?.createdAt?.toLocaleString()}</small>
+                  <small>{service?.createdAt?.toString()}</small>
                 </Card.Text>
                 <Card.Text>{service?.description}</Card.Text>
                 <Card.Text>
@@ -113,9 +113,11 @@ const ServiceDetailsPage = () => {
                   <strong>Price per Hour:</strong> AED {service?.price}
                 </Card.Text>
                 <Card.Text>
-                  <strong>Available Hours:</strong> {service?.hoursAvailable || service?.wash} hours
+                  <strong>Avalaible Wash:</strong> {service?.wash} wash
                 </Card.Text>
-
+                <Card.Text>
+                  <strong>Frquencey:</strong> {service?.frequency}
+                </Card.Text>
                 <Card.Text>
                   <strong>Rating:</strong>
                   {[...Array(5)].map((_, index) => (
@@ -137,7 +139,7 @@ const ServiceDetailsPage = () => {
                     -
                   </Button>
                   <span className="mx-3">{selectedHours}</span>
-                  {service?.hoursAvailable && service?.wash <= selectedHours ? null :
+                  { service?.wash <= selectedHours ? null :
                     <Button variant="secondary" onClick={handleIncreaseHours}>
                       +
                     </Button>

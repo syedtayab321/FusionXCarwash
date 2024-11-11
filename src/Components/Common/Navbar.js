@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './../../assets/css/Navbar.css';
 import {Link, useNavigate} from "react-router-dom";
-import logo from './../../assets/images/logo.jpeg';
+import logo from './../../assets/images/home.jpg';
 import SignupModal from "../../Pages/AuthPages/SignUpModel";
 import LoginModal from './../../Pages/AuthPages/Login';
 import { Navbar, Nav, Button, Container } from 'react-bootstrap';
@@ -38,6 +38,7 @@ const NavbarComponent = () => {
           <Navbar.Toggle aria-controls="customNavbarNav" />
           <Navbar.Collapse id="customNavbarNav">
             <Nav className="mx-auto custom-nav">
+              <Nav.Link as={Link} to="/" className="custom-nav-link">Home</Nav.Link>
               <Nav.Link as={Link} to="/about" className="custom-nav-link">About Us</Nav.Link>
               <Nav.Link as={Link} to="/contact" className="custom-nav-link">Contact</Nav.Link>
               <Nav.Link as={Link} to="/faqs" className="custom-nav-link">Faqs</Nav.Link>

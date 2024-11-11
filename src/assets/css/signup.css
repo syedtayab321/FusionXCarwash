@@ -1,3 +1,6 @@
+*{
+  font-family: 'Poppins'
+}
 .signup-modal {
   display: flex;
   overflow: hidden;

@@ -24,7 +24,7 @@ const TopBar = ({ username }) => {
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ms-auto d-flex align-items-center">
-            <span className="text-white me-3">Hello, Guest User</span>
+            <span className="text-white me-3">Hello, {username}</span>
             <Button
               variant="outline-light"
               className="me-3 rounded-circle p-2"

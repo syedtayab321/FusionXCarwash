@@ -10,7 +10,9 @@ import OrdersScreen from "./Pages/Dashboard/Orders";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import About from "./Components/MainPage/About";
 import Faq from "./Components/MainPage/Faqs";
-
+import PlanDetails from "./Components/MainPage/MainServicesDetails";
+import FloatingWhatsAppButton from "./Components/Common/whatsappButton";
+import './App.css';
 function App() {
   return (
     <>
@@ -20,6 +22,7 @@ function App() {
          <Route path="/contact" element={<About/>} />
          <Route path="/about" element={<About/>} />
          <Route path="/faqs" element={<Faq/>} />
+         <Route path="/service/:serviceId" element={<PlanDetails />} />
          {/*main page routes*/}
          <Route path="/dashboard" element={<HomePage />} />
          <Route path="/subCategories" element={<SubcategoriesPage />} />
@@ -28,6 +31,7 @@ function App() {
          <Route path="/cart" element={<CartScreen />} />
          <Route path="/orders" element={<OrdersScreen />} />
        </Routes>
+        <FloatingWhatsAppButton />
     </>
   );
 }

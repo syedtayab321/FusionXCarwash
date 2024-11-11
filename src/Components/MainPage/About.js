@@ -1,9 +1,11 @@
 import React from 'react';
-import './../../assets/css/about.css';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import image1 from './../../assets/images/bike1.jpg';
 import image2 from './../../assets/images/image1.jpg';
 import image3 from './../../assets/images/home.jpg';
+import './../../assets/css/about.css';
+
 const About = () => {
   return (
     <div className="about-page">
@@ -19,11 +21,7 @@ const About = () => {
       <Container className="about-company">
         <Row>
           <Col md={6}>
-            <img
-              src={image1}
-              alt="Car Wash Service"
-              className="about-image"
-            />
+            <img src={image1} alt="Car Wash Service" className="about-image" />
           </Col>
           <Col md={6} className="about-text">
             <h2>Who We Are</h2>
@@ -40,37 +38,43 @@ const About = () => {
         <h2 className="section-title">Our Services</h2>
         <Row>
           <Col md={4}>
-            <Card className="service-card">
-              <Card.Img variant="top" src={image2} />
-              <Card.Body>
-                <Card.Title>Car Cleaning</Card.Title>
-                <Card.Text>
-                  Comprehensive car wash services to keep your vehicle spotless, inside and out.
-                </Card.Text>
-              </Card.Body>
-            </Card>
+            <Link to="/service/Car Wash" className="service-link">
+              <Card className="service-card">
+                <Card.Img variant="top" src={image2} />
+                <Card.Body>
+                  <Card.Title>Car Wash</Card.Title>
+                  <Card.Text>
+                    Comprehensive car wash services to keep your vehicle spotless, inside and out.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Link>
           </Col>
           <Col md={4}>
-            <Card className="service-card">
-              <Card.Img variant="top" src={image3} />
-              <Card.Body>
-                <Card.Title>Home Cleaning</Card.Title>
-                <Card.Text>
-                  Professional home cleaning services to make your space shine.
-                </Card.Text>
-              </Card.Body>
-            </Card>
+            <Link to="/service/House Cleaning" className="service-link">
+              <Card className="service-card">
+                <Card.Img variant="top" src={image3} />
+                <Card.Body>
+                  <Card.Title>Home Cleaning</Card.Title>
+                  <Card.Text>
+                    Professional home cleaning services to make your space shine.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Link>
           </Col>
           <Col md={4}>
-            <Card className="service-card">
-              <Card.Img variant="top" src={image1} />
-              <Card.Body>
-                <Card.Title>Bike Cleaning</Card.Title>
-                <Card.Text>
-                  Specialized bike cleaning services to keep your ride in top condition.
-                </Card.Text>
-              </Card.Body>
-            </Card>
+            <Link to="/service/Bike Wash" className="service-link">
+              <Card className="service-card">
+                <Card.Img variant="top" src={image1} />
+                <Card.Body>
+                  <Card.Title>Bike Wash</Card.Title>
+                  <Card.Text>
+                    Specialized bike cleaning services to keep your ride in top condition.
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Link>
           </Col>
         </Row>
       </Container>

@@ -1,3 +1,6 @@
+*{
+  font-family: 'Poppins'
+}
 /* ServiceDetailsPage.css */
 .service-card {
   border-radius: 15px;

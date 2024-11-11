@@ -5,21 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="79270ec6-63b3-4fc0-a661-71b59a08483a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Components/MainPage/About.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/MainPage/Faqs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/MainPage/footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/css/about.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/css/faqs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/css/footer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Common/whatsappButton.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/MainPage/MainServicesDetails.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/css/MainServices.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/Common/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Common/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/DashboardComponents/ServicePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/DashboardComponents/ServicePage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/MainPage/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainPage/HomeScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/Dashboard/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Dashboard/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/DashboardComponents/TopBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/DashboardComponents/TopBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainPage/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainPage/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/MainPage/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/MainPage/footer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pages/Dashboard/ServicesDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/Dashboard/ServicesDetails.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pages/MainScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pages/MainScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/Home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/Home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/Navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/Topbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/Topbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/about.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/cart.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/faqs.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/faqs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/fav.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/fav.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/serviceDetals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/serviceDetals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/servicecard.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/servicecard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/signup.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/signup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/subCatgeoryButton.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/subCatgeoryButton.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,22 +48,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "D:/OwnData/FusionXcarWash/fusionx",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/OwnData/FusionXcarWash/fusionx&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -69,7 +76,8 @@
       <workItem from="1731196948685" duration="2443000" />
       <workItem from="1731209904224" duration="5507000" />
       <workItem from="1731268370629" duration="30000" />
-      <workItem from="1731285783877" duration="2917000" />
+      <workItem from="1731285783877" duration="3345000" />
+      <workItem from="1731295254196" duration="5193000" />
     </task>
     <servers />
   </component>
